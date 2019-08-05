@@ -1,4 +1,4 @@
-h1 {
+h1, h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 400; }
 
@@ -8,7 +8,34 @@ h1 {
   font-weight: normal;
   font-style: normal; }
 
-body {
-  background: #eee; }
+.header {
+  margin-bottom: 56px; }
+  @media (max-width: 639px) {
+    .header {
+      margin-bottom: 40px; } }
+
+.city-group__title {
+  font-weight: 700; }
+
+.footer {
+  background-color: #262626; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.body {
+  margin: 0; }
+
+.container {
+  margin: 0 auto;
+  padding: 0 4px; }
+  @media (min-width: 640px) and (max-width: 1023px) {
+    .container {
+      padding: 0 8px; } }
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 1024px;
+      padding: 0 88px; } }
 
 /*# sourceMappingURL=main.css.map */
