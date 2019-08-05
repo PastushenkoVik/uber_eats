@@ -1,6 +1,26 @@
+@import "vars";
+
 @mixin hover($_property, $_toValue) {
   transition: #{$_property} 0.3s;
   &:hover {
     #{$_property}: $_toValue;
+  }
+}
+
+@mixin for-phone {
+  @media (max-width: #{$media-tablet - 1}) {
+    @content;
+  }
+}
+
+@mixin for-tablet {
+  @media (min-width: #{$media-tablet}) and (max-width: #{$media-desktop - 1}) {
+    @content;
+  }
+}
+
+@mixin for-desktop {
+  @media (min-width: #{$media-desktop}) {
+    @content;
   }
 }

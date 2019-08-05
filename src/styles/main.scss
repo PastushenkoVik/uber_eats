@@ -1,7 +1,26 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "bloks";
 
-body {
-  background: $c-gray;
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 4px;
+
+  @include for-tablet {
+    padding: 0 8px;
+  }
+
+  @include for-desktop {
+    max-width: 1024px;
+    padding: 0 88px;
+  }
 }
