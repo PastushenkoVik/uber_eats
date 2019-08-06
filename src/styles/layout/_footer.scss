@@ -1,6 +1,5 @@
 .footer {
   background-color: #262626;
-  color: #fff;
   padding-top: 16px;
 
   &__row {
@@ -13,6 +12,13 @@
     &--flex {
       display: flex;
       justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    &--flex-center {
+      display: flex;
+      justify-content: center;
       align-items: center;
       flex-wrap: wrap;
     }
@@ -24,6 +30,18 @@
     @include for-tablet {
       flex-basis: 33%;
     }
+
+    &--flex-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      &:not(:last-child) {
+        @include for-phone {
+          padding-bottom: 23px;
+        }
+      }
+    }
   }
 
   &__logo {
@@ -33,9 +51,13 @@
   }
 
   &__text {
+    font-size: 13px;
+    line-height: 15px;
+
     &--small {
       font-size: 11px;
       line-height: 13px;
+      color: #fff;
 
       &:not(:last-child) {
         @include for-phone {
@@ -43,5 +65,43 @@
         }
       }
     }
+
+    &--column:not(:last-child) {
+      padding-bottom: 23px;
+    }
+  }
+
+  &__icon img {
+    margin-right: 8px;
+    transition: {
+      duration: 0.3s;
+      property: transform;
+    };
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+    }
+  }
+
+  &__a {
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+      font-weight: 700;
+    }
+  }
+
+  .uber_tag {
+    margin: 30px 0 18px;
+  }
+}
+
+.store-button {
+  cursor: pointer;
+
+  &:first-child {
+    margin-right: 40px;
   }
 }
