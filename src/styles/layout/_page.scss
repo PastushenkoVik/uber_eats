@@ -20,7 +20,6 @@ ul {
 .container {
   margin: 0 auto;
   padding: 0 4px;
-  line-height: 1;
 
   @include for-tablet {
     padding: 0 8px;

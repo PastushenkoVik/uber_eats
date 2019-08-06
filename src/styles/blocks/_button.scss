@@ -1,0 +1,55 @@
+.button {
+  cursor: pointer;
+  padding: 0;
+  border-radius: 2px;
+  height: 40px;
+
+  width: 72px;
+  @include for-tablet {
+    width: 80px;
+  }
+
+  font: {
+    weight: 500;
+    size: 13px;
+  }
+  line-height: 24px;
+  transition: {
+    duration: 0.5s;
+    property: border, transform;
+  };
+
+  &--white {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    color: #1d1d1d;
+
+    &:hover {
+      border: 1px solid #000;
+    }
+  }
+
+  &--black {
+    border: 1px solid #262626;
+    background-color: #262626;
+    color: #fff;
+
+    &:hover {
+      border: 1px solid #e0e0e0;
+    }
+  }
+
+  &--img {
+    border: 1px solid transparent;
+    color: transparent;
+    width: 40px;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &--backet {
+    background: url("../../images/basket.svg") no-repeat center center;
+  }
+}

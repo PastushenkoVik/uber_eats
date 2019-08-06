@@ -1,7 +1,14 @@
 .header {
-  &__logo {
-    display: inline-block;
+  box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
 
+  &__container {
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
     width: 105px;
     height: 11px;
 
@@ -9,5 +16,9 @@
       width: 119px;
       height: 12px;
     }
+  }
+
+  .button--black {
+    margin-left: 18px;
   }
 }
