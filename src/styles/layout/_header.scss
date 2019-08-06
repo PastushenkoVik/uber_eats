@@ -1,13 +1,7 @@
 .header {
-  margin-bottom: 56px;
+  &__logo {
+    display: inline-block;
 
-  @include for-phone {
-    margin-bottom: 40px;
-  }
-}
-
-.header__logo {
-  .logo_link {
     width: 105px;
     height: 11px;
 

@@ -7,16 +7,27 @@
   font-family: Roboto, sans-serif;
 }
 
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 4px;
+  line-height: 1;
 
   @include for-tablet {
     padding: 0 8px;
   }
 
   @include for-desktop {
-    max-width: 1024px;
-    padding: 0 88px;
+    max-width: 1200px;
+    padding: 0 35px;
   }
 }

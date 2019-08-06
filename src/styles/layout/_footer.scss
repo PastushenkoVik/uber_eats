@@ -1,3 +1,47 @@
 .footer {
   background-color: #262626;
+  color: #fff;
+  padding-top: 16px;
+
+  &__row {
+    padding: 40px 0;
+
+    &--border-bottom {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    }
+
+    &--flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__column {
+    flex-basis: 100%;
+
+    @include for-tablet {
+      flex-basis: 33%;
+    }
+  }
+
+  &__logo {
+    display: inline-block;
+    width: 190px;
+    height: 20px;
+  }
+
+  &__text {
+    &--small {
+      font-size: 11px;
+      line-height: 13px;
+
+      &:not(:last-child) {
+        @include for-phone {
+          padding-bottom: 24px;
+        }
+      }
+    }
+  }
 }
