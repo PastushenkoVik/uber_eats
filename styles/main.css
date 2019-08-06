@@ -149,7 +149,24 @@ h1, h2 {
     background: url("../../images/basket.svg") no-repeat center center; }
 
 .input {
-  display: none; }
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1d1d1d; }
+  .input__asap {
+    width: 290px;
+    background: url("../../images/geotag.png") no-repeat 10px center;
+    padding: 0 10px 0 30px; }
+
+.label {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #626262; }
+  .label span {
+    margin: 0 9px; }
 
 * {
   -webkit-box-sizing: border-box;
