@@ -1,14 +1,7 @@
 @import "vars";
 
-@mixin hover($_property, $_toValue) {
-  transition: #{$_property} 0.3s;
-  &:hover {
-    #{$_property}: $_toValue;
-  }
-}
-
 @mixin for-phone {
-  @media only screen and (max-width: #{$media-phone}) {
+  @media only screen and (max-width: #{$media-tablet - 1}) {
     @content;
   }
 }

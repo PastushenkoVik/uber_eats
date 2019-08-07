@@ -17,12 +17,19 @@ ul {
   font-weight: normal;
 }
 
+header {
+  @include for-phone {
+    position: relative;
+    padding-bottom: 80px;
+  }
+}
+
 .container {
   margin: 0 auto;
-  padding: 0 4px;
+  padding: 0 7px;
 
   @include for-tablet {
-    padding: 0 8px;
+    padding: 0 9px;
   }
 
   @include for-desktop {
