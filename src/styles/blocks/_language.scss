@@ -10,7 +10,7 @@
   position: relative;
 
   &::after {
-    content: url("../../images/shevron-down.svg");
+    content: url("./../images/shevron-down.svg");
     position: absolute;
     right: 10px;
     top: 22%;
