@@ -17,3 +17,8 @@
     @content;
   }
 }
+
+@mixin transition($duration, $property) {
+  transition-duration: $duration;
+  transition-property: #{$property};
+}

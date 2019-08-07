@@ -86,9 +86,11 @@
   &__a {
     color: #fff;
     text-decoration: none;
+    @include transition(0.1s, "color, font-weight");
 
     &:hover {
-      font-weight: 700;
+      color: #49a144;
+      font-weight: 600;
     }
   }
 

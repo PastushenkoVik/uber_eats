@@ -14,10 +14,7 @@
     size: 13px;
   }
   line-height: 24px;
-  transition: {
-    duration: 0.5s;
-    property: border, transform;
-  };
+  @include transition( 0.3s, "border, transform");
 
   &--white {
     background-color: #fff;
