@@ -16,34 +16,26 @@
   line-height: 24px;
   @include transition( 0.3s, "border, transform");
 
+  &:hover {
+    border: 1px solid #49a144;
+  }
+
   &--white {
     background-color: #fff;
     border: 1px solid #e0e0e0;
     color: #1d1d1d;
-
-    &:hover {
-      border: 1px solid #000;
-    }
   }
 
   &--black {
     border: 1px solid #262626;
     background-color: #262626;
     color: #fff;
-
-    &:hover {
-      border: 1px solid #e0e0e0;
-    }
   }
 
   &--img {
     border: 1px solid transparent;
     color: transparent;
     width: 40px;
-
-    &:hover {
-      transform: scale(1.1);
-    }
   }
 
   &--backet {

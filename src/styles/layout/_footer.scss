@@ -72,10 +72,7 @@
 
   &__icon img {
     margin-right: 8px;
-    transition: {
-      duration: 0.3s;
-      property: transform;
-    };
+    @include transition(0.3s, "transform");
 
     &:hover {
       cursor: pointer;
