@@ -6,22 +6,27 @@
     <link rel="stylesheet" href="./styles/main.css">
   </head>
   <body class="body">
-    <header class="header">
-      <div class="container header__container">
-        <a href="#" class="header__logo logo_link">
-          <img src="./images/logo.svg" alt="uber eats">
-        </a>
-        <div class="asap">
-          <label class="label">
-            <span>to</span>
-            <input class="input input__asap" type="text">
-          </label>
+    <header>
+      <div class="header">
+        <div class="container header__container">
+          <a href="#" class="header__logo logo_link">
+            <img src="./images/logo.svg" alt="uber eats">
+          </a>
+          <div class="asap">
+            <label class="label">
+              <span>to</span>
+              <input class="input input__asap" type="text">
+            </label>
+          </div>
+          <div class="header__signin">
+            <button class="button button--white" type="button">Sign In</button>
+            <button class="button button--black" type="button">Register</button>
+            <button class="button button--img button--backet" type="button">1</button>
+          </div>
         </div>
-        <div class="header__signin">
-          <button class="button button--white" type="button">Sign In</button>
-          <button class="button button--black" type="button">Register</button>
-          <button class="button button--img button--backet" type="button">1</button>
-        </div>
+      </div>
+      <div class="container">
+        <input class="input__search" type="text" placeholder="Search for restaurant or cuisine">
       </div>
     </header>
 
