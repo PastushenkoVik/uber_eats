@@ -11,6 +11,11 @@
     color: #626262;
     opacity: 0.5;
   }
+
+  &:focus {
+    border: 1px solid $c-green;
+    outline: none !important;
+  }
 }
 
 .label {

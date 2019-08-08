@@ -4,6 +4,8 @@
   right: 16px;
   width: 64px;
   height: 64px;
+  display: flex;
+  justify-content: center;
 
   @include for-tablet {
     width: 80px;

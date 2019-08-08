@@ -2,7 +2,11 @@
   box-sizing: border-box;
 }
 
-.body {
+html {
+  scroll-behavior: smooth;
+}
+
+body {
   margin: 0;
   font-family: Roboto, sans-serif;
 }

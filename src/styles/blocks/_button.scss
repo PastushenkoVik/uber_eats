@@ -14,10 +14,9 @@
     size: 13px;
   }
   line-height: 24px;
-  @include transition( 0.3s, "border, transform");
 
-  &:hover {
-    border: 1px solid #49a144;
+  @include transition-hover( 0.3s, "border") {
+    border: 1px solid $c-green;
   }
 
   &--white {

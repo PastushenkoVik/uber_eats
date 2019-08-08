@@ -23,8 +23,8 @@
   transition-property: #{$property};
 }
 
-@mixin hover($duration, $property) {
-  @include transition();
+@mixin transition-hover($duration, $property) {
+  @include transition ($duration, $property);
 
   &:hover {
     @content;

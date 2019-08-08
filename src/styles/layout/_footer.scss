@@ -70,22 +70,23 @@
     }
   }
 
-  &__icon img {
+  &__icon__link {
     cursor: pointer;
     margin-right: 8px;
 
-    @include hover(0.3s, "transform") {
-      transform: scale(1.2);
+    & img {
+      @include transition-hover(0.3s, "transform") {
+        transform: scale(1.2);
+      }
     }
   }
 
   &__a {
     color: #fff;
     text-decoration: none;
-    @include transition(0.1s, "color, font-weight");
 
-    &:hover {
-      color: #49a144;
+    @include transition-hover(0.2s, "color, font-weight") {
+      color: $c-green;
       font-weight: 600;
     }
   }
