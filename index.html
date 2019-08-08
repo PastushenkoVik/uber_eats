@@ -11,7 +11,8 @@
     <title>Uber Eats</title>
     <link rel="stylesheet" href="./styles/main.css">
   </head>
-  <body class="body">
+  <body>
+    <a id="page-top"></a>
     <header>
       <div class="header">
         <div class="container header__container">
@@ -26,7 +27,7 @@
             </label>
             <label class="label">
               <span>To</span>
-              <input class="input asap__input" type="text">
+              <input class="input asap__input" type="text" placeholder="ul. Tarasivska St, 16 ">
             </label>
           </div>
           <div class="header__signin">
@@ -37,7 +38,7 @@
         </div>
       </div>
       <div class="container">
-        <input class="input__search" type="text" placeholder="Search for restaurant or cuisine">
+        <input class="input input__search" type="text" placeholder="Search for restaurant or cuisine">
       </div>
     </header>
 
@@ -48,7 +49,7 @@
           <div class="card-list">
             <div class="card-list__item">
               <div class="card-img">
-                <img src="./images/goods/macdonalds.png" alt="Макдоналдс">
+                <img src="./images/goods/macdonalds.png" alt="macdonalds photo">
               </div>
               <h2 class="card-title">Макдоналдс</h2>
               <ul class="card-description">
@@ -59,7 +60,7 @@
             </div>
             <div class="card-list__item">
               <div class="card-img">
-                <img src="./images/goods/wokwei.png" alt="wokwei">
+                <img src="./images/goods/wokwei.png" alt="wokwei photo">
               </div>
               <h2 class="card-title">WOKWEI</h2>
               <ul class="card-description">
@@ -71,7 +72,7 @@
             </div>
             <div class="card-list__item">
               <div class="card-img">
-                <img src="./images/goods/yizha.png" alt="yizha">
+                <img src="./images/goods/yizha.png" alt="yizha photo">
               </div>
               <h2 class="card-title">YIZHA</h2>
               <ul class="card-description">
@@ -84,7 +85,7 @@
             </div>
             <div class="card-list__item">
               <div class="card-img">
-                <img src="./images/goods/musafir.png" alt="musafir">
+                <img src="./images/goods/musafir.png" alt="musafir photo">
               </div>
               <h2 class="card-title">Musafir (вул. Саксаганського)</h2>
               <ul class="card-description">
@@ -95,7 +96,7 @@
             </div>
             <div class="card-list__item">
               <div class="card-img">
-                <img src="./images/goods/wokwei-2.png" alt="wokwei">
+                <img src="./images/goods/wokwei-2.png" alt="wokwei photo">
               </div>
               <h2 class="card-title">WOKWEI</h2>
               <ul class="card-description">
@@ -107,7 +108,7 @@
             </div>
             <div class="card-list__item">
               <div class="card-img">
-                <img src="./images/goods/milk-bar.png" alt="milk bar">
+                <img src="./images/goods/milk-bar.png" alt="milk bar photo">
               </div>
               <h2 class="card-title">Milk Bar</h2>
               <ul class="card-description">
@@ -119,7 +120,7 @@
             </div>
             <div class="card-list__item">
               <div class="card-img">
-                <img src="./images/goods/brooklyn.png" alt="mimosa brooklyn pizza">
+                <img src="./images/goods/brooklyn.png" alt="mimosa brooklyn pizza photo">
               </div>
               <h2 class="card-title">Mimosa Brooklyn Pizza</h2>
               <ul class="card-description">
@@ -132,7 +133,7 @@
             </div>
             <div class="card-list__item">
               <div class="card-img">
-                <img src="./images/goods/to-be.png" alt="to be">
+                <img src="./images/goods/to-be.png" alt="to be photo">
               </div>
               <h2 class="card-title">To Be</h2>
               <ul class="card-description">
@@ -145,7 +146,7 @@
             </div>
             <div class="card-list__item">
               <div class="card-img">
-                <img src="./images/goods/druzi.png" alt="druzi cafe">
+                <img src="./images/goods/druzi.png" alt="druzi cafe photo">
               </div>
               <h2 class="card-title">Druzi Cafe (вул. Прорізна)</h2>
               <ul class="card-description">
@@ -178,9 +179,15 @@
               <a href="#" class="footer__a"><span>#</span>UberEats</a>
             </span>
             <div class="footer__icon">
-              <img src="images/social/facebook.svg" alt="facebook">
-              <img src="images/social/twitter.svg" alt="twitter">
-              <img src="images/social/instagram.svg" alt="instagram">
+              <a href="#" class="footer__icon__link">
+                <img src="images/social/facebook.svg" alt="facebook">
+              </a>
+              <a href="#" class="footer__icon__link">
+                <img src="images/social/twitter.svg" alt="twitter">
+              </a>
+              <a href="#" class="footer__icon__link">
+                <img src="images/social/instagram.svg" alt="instagram">
+              </a>
             </div>
           </div>
           <div class="footer__column footer__column--flex-column">
@@ -225,9 +232,9 @@
       </div>
     </footer>
 
-    <button class="arrow-up">
+    <a href="#page-top" class="arrow-up">
       <img src="./images/arrow_up.svg" alt="up">
-    </button>
+    </a>
 
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
