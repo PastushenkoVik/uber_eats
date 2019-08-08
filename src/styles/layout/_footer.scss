@@ -71,11 +71,10 @@
   }
 
   &__icon img {
+    cursor: pointer;
     margin-right: 8px;
-    @include transition(0.3s, "transform");
 
-    &:hover {
-      cursor: pointer;
+    @include hover(0.3s, "transform") {
       transform: scale(1.2);
     }
   }

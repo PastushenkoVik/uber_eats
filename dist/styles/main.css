@@ -150,7 +150,23 @@ h1, h2 {
   height: 40px;
   font-size: 16px;
   line-height: 24px;
-  color: #1d1d1d; }
+  color: #1d1d1d;
+  padding: 0 10px 0 35px; }
+  .input::-webkit-input-placeholder {
+    color: #626262;
+    opacity: 0.5; }
+  .input::-moz-placeholder {
+    color: #626262;
+    opacity: 0.5; }
+  .input:-ms-input-placeholder {
+    color: #626262;
+    opacity: 0.5; }
+  .input::-ms-input-placeholder {
+    color: #626262;
+    opacity: 0.5; }
+  .input::placeholder {
+    color: #626262;
+    opacity: 0.5; }
 
 .label {
   font-weight: 300;
@@ -180,8 +196,7 @@ h1, h2 {
 
 .asap__input {
   width: 290px;
-  background: url("./../images/geotag.png") no-repeat 10px center;
-  padding: 0 10px 0 30px; }
+  background: url("./../images/geotag.png") no-repeat 10px center; }
   @media only screen and (max-width: 639px) {
     .asap__input {
       margin-top: 5px;
@@ -230,28 +245,15 @@ h1, h2 {
 .input__search {
   height: 40px;
   width: 100%;
-  padding: 0 10px 8px 35px;
   border: none;
   border-bottom: 1px solid rgba(117, 117, 117, 0.3);
-  background: url("./../images/search.svg") no-repeat left 2px;
+  background: url("./../images/search.svg") no-repeat left center;
   font-size: 16px;
   line-height: 24px;
   color: #1d1d1d; }
-  .input__search::-webkit-input-placeholder {
-    color: #626262;
-    opacity: 0.5; }
-  .input__search::-moz-placeholder {
-    color: #626262;
-    opacity: 0.5; }
-  .input__search:-ms-input-placeholder {
-    color: #626262;
-    opacity: 0.5; }
-  .input__search::-ms-input-placeholder {
-    color: #626262;
-    opacity: 0.5; }
-  .input__search::placeholder {
-    color: #626262;
-    opacity: 0.5; }
+  @media only screen and (min-width: 640px) {
+    .input__search {
+      height: 48px; } }
 
 .arrow-up {
   position: fixed;
@@ -402,6 +404,7 @@ ul {
     .footer__text--column:not(:last-child) {
       padding-bottom: 23px; }
   .footer__icon img {
+    cursor: pointer;
     margin-right: 8px;
     -webkit-transition-duration: 0.3s;
             transition-duration: 0.3s;
@@ -410,7 +413,6 @@ ul {
     transition-property: transform;
     transition-property: transform, -webkit-transform; }
     .footer__icon img:hover {
-      cursor: pointer;
       -webkit-transform: scale(1.2);
               transform: scale(1.2); }
   .footer__a {

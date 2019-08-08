@@ -17,7 +17,6 @@
   &__input {
     width: 290px;
     background: url("./../images/geotag.png") no-repeat 10px center;
-    padding: 0 10px 0 30px;
 
     @include for-phone {
       margin-top: 5px;
