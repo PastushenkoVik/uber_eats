@@ -161,7 +161,9 @@ h1, h2 {
   font-size: 16px;
   line-height: 24px;
   color: #1d1d1d;
-  padding: 0 10px 0 35px; }
+  padding: 0 10px 0 35px;
+  background-repeat: no-repeat;
+  background-position: 10px center; }
   .input::-webkit-input-placeholder {
     color: #626262;
     opacity: 0.5; }
@@ -209,7 +211,7 @@ h1, h2 {
 
 .asap__input {
   width: 290px;
-  background: url("./../images/geotag.png") no-repeat 10px center; }
+  background-image: url("./../images/geotag.png"); }
   @media only screen and (max-width: 639px) {
     .asap__input {
       margin-top: 5px;
@@ -262,9 +264,10 @@ h1, h2 {
 .input__search {
   height: 40px;
   width: 100%;
+  padding-left: 40px;
   border: none;
   border-bottom: 1px solid rgba(117, 117, 117, 0.3);
-  background: url("./../images/search.svg") no-repeat left center;
+  background-image: url("./../images/search.svg");
   font-size: 16px;
   line-height: 24px;
   color: #1d1d1d; }
@@ -345,11 +348,13 @@ ul {
             align-items: center; }
   .header__logo {
     width: 105px;
-    height: 11px; }
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
     @media only screen and (min-width: 1024px) {
       .header__logo {
-        width: 119px;
-        height: 12px; } }
+        width: 119px; } }
   .header .button--black {
     margin-left: 18px; }
 

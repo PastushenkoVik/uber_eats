@@ -11,11 +11,11 @@
 
   &__logo {
     width: 105px;
-    height: 11px;
+    height: 100%;
+    display: flex;
 
     @include for-desktop {
       width: 119px;
-      height: 12px;
     }
   }
 
