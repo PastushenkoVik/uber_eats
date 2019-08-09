@@ -19,7 +19,18 @@
     }
   }
 
-  .button--black {
-    margin-left: 18px;
+  .button {
+    &--black {
+      margin-left: 12px;
+      @include for-tablet {
+        margin-left: 18px;
+      }
+    }
+
+    &--backet {
+      @include for-phone {
+        display: none;
+      }
+    }
   }
 }
