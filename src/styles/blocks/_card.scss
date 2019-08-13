@@ -11,14 +11,35 @@
   }
 
   &__item {
+    position: relative;
     width: 100%;
     padding-bottom: 20px;
-    overflow: hidden;
+
+    &::after {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      width: calc(100% + 10px);
+      height: calc(100% + 10px);
+      border-radius: 8px;
+      background-color: $c-green-light;
+      opacity: 0;
+      @include transition(0.5s, "opacity");
+    }
 
     @include for-desktop {
-      @include transition-hover(0.5s, "transform, background-color") {
+      @include transition-hover(0.5s, "transform") {
         transform: scale(1.02);
-        background-color: #c8e2c6;
+
+        &::after {
+          opacity: 1;
+        }
+
+        .card-img {
+          border-radius: 5px;
+        }
       }
     }
   }
@@ -29,6 +50,8 @@
 
   @include for-tablet {
     height: 256px;
+
+    @include transition(0.5s, "border");
   }
 
   img {
