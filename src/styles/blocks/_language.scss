@@ -1,0 +1,29 @@
+.language {
+  width: 176px;
+  height: 40px;
+  background: #3b3b3b;
+  border-radius: 2px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+
+  &::after {
+    content: url("./../images/shevron-down.svg");
+    position: absolute;
+    right: 10px;
+    top: 22%;
+  }
+
+  &__logo {
+    margin: 0 21px 0 16px;
+  }
+
+  &__item {
+    font-size: 13px;
+    line-height: 15px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+}

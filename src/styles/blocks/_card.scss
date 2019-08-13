@@ -1,0 +1,95 @@
+.card-list {
+  display: grid;
+  grid-gap: $card-gap;
+  grid-template-columns: 1fr;
+
+  @include for-tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include for-desktop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__item {
+    position: relative;
+    width: 100%;
+    padding-bottom: 20px;
+
+    &::after {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      width: calc(100% + 10px);
+      height: calc(100% + 10px);
+      border-radius: 8px;
+      background-color: $c-green-light;
+      opacity: 0;
+      @include transition(0.5s, "opacity");
+    }
+
+    @include for-desktop {
+      @include transition-hover(0.5s, "transform") {
+        transform: scale(1.02);
+
+        &::after {
+          opacity: 1;
+        }
+
+        .card-img {
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+.card-img {
+  overflow: hidden;
+
+  @include for-tablet {
+    height: 256px;
+
+    @include transition(0.5s, "border");
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.card-title {
+  font-size: 16px;
+  line-height: 24px;
+  color: #1d1d1d;
+
+  margin-top: 14px;
+  @include for-tablet {
+    margin-top: 16px;
+  }
+}
+
+.card-description {
+  font-size: 14px;
+  line-height: 21px;
+  color: #626262;
+
+  display: flex;
+  justify-content: flex-start;
+
+  &__item {
+    margin-right: 25px;
+    white-space: nowrap;
+
+    &:first-child {
+      list-style: none;
+    }
+  }
+}
+
+.card-time {
+  font-size: 13px;
+  line-height: 21px;
+  color: #1d1d1d;
+}

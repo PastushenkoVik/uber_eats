@@ -1,0 +1,36 @@
+.header {
+  box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
+
+  &__container {
+    height: 72px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 105px;
+    height: 100%;
+    display: flex;
+
+    @include for-desktop {
+      width: 119px;
+    }
+  }
+
+  .button {
+    &--black {
+      margin-left: 12px;
+      @include for-tablet {
+        margin-left: 18px;
+      }
+    }
+
+    &--backet {
+      @include for-phone {
+        display: none;
+      }
+    }
+  }
+}

@@ -2,12 +2,233 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width,
+          user-scalable=no,
+          initial-scale=1.0,
+          maximum-scale=1.0,
+          minimum-scale=1.0">
+    <title>Uber Eats</title>
     <link rel="stylesheet" href="./styles/main.css">
   </head>
   <body>
-    <img src="./images/logo.svg" alt="Logo">
-    <h1>Hello Mate Academy</h1>
+    <header>
+      <div class="header">
+        <div class="container header__container">
+          <a id="page-top" href="#" class="header__logo logo_link">
+            <img src="./images/logo.svg" alt="uber eats">
+          </a>
+          <div class="asap">
+            <label class="asap__label">
+              <span>When</span>
+              ASAP
+              <input type="checkbox">
+            </label>
+            <label class="label">
+              <span>To</span>
+              <input class="input asap__input" type="text" placeholder="ul. Tarasivska St, 16 ">
+            </label>
+          </div>
+          <div class="header__signin">
+            <button class="button button--white" type="button">Sign In</button>
+            <button class="button button--black" type="button">Register</button>
+            <button class="button button--img button--backet" type="button">1</button>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <input class="input input__search" type="text" placeholder="Search for restaurant or cuisine">
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <section class="city-group">
+          <h1 class="city-group__title">Kyiv Restaurants</h1>
+          <div class="card-list">
+            <div class="card-list__item">
+              <div class="card-img">
+                <img src="./images/goods/macdonalds.png" alt="mcdonalds photo">
+              </div>
+              <h2 class="card-title">Макдоналдс</h2>
+              <ul class="card-description">
+                <li class="card-description__item">₴₴</li>
+                <li class="card-description__item">Бургеры</li>
+              </ul>
+              <p class="card-time">25 - 35 Min</p>
+            </div>
+            <div class="card-list__item">
+              <div class="card-img">
+                <img src="./images/goods/wokwei.png" alt="wokwei photo">
+              </div>
+              <h2 class="card-title">WOKWEI</h2>
+              <ul class="card-description">
+                <li class="card-description__item">₴</li>
+                <li class="card-description__item">Китайська</li>
+                <li class="card-description__item">Азіатська</li>
+              </ul>
+              <p class="card-time">40 - 50 Min</p>
+            </div>
+            <div class="card-list__item">
+              <div class="card-img">
+                <img src="./images/goods/yizha.png" alt="yizha photo">
+              </div>
+              <h2 class="card-title">YIZHA</h2>
+              <ul class="card-description">
+                <li class="card-description__item">₴₴</li>
+                <li class="card-description__item">Американська</li>
+                <li class="card-description__item">Бургери</li>
+                <li class="card-description__item">Вулична їжа</li>
+              </ul>
+              <p class="card-time">25 - 35 Min</p>
+            </div>
+            <div class="card-list__item">
+              <div class="card-img">
+                <img src="./images/goods/musafir.png" alt="musafir photo">
+              </div>
+              <h2 class="card-title">Musafir (вул. Саксаганського)</h2>
+              <ul class="card-description">
+                <li class="card-description__item">₴₴</li>
+                <li class="card-description__item">Близькосхідна</li>
+              </ul>
+              <p class="card-time">30 - 40 Min</p>
+            </div>
+            <div class="card-list__item">
+              <div class="card-img">
+                <img src="./images/goods/wokwei-2.png" alt="wokwei photo">
+              </div>
+              <h2 class="card-title">WOKWEI</h2>
+              <ul class="card-description">
+                <li class="card-description__item">₴</li>
+                <li class="card-description__item">Китайська</li>
+                <li class="card-description__item">Азіатська</li>
+              </ul>
+              <p class="card-time">40 - 50 Min</p>
+            </div>
+            <div class="card-list__item">
+              <div class="card-img">
+                <img src="./images/goods/milk-bar.png" alt="milk bar photo">
+              </div>
+              <h2 class="card-title">Milk Bar</h2>
+              <ul class="card-description">
+                <li class="card-description__item">₴₴</li>
+                <li class="card-description__item">Десерти</li>
+                <li class="card-description__item">Європейська</li>
+              </ul>
+              <p class="card-time">25 - 35 Min</p>
+            </div>
+            <div class="card-list__item">
+              <div class="card-img">
+                <img src="./images/goods/brooklyn.png" alt="mimosa brooklyn pizza photo">
+              </div>
+              <h2 class="card-title">Mimosa Brooklyn Pizza</h2>
+              <ul class="card-description">
+                <li class="card-description__item">₴₴</li>
+                <li class="card-description__item">Італійська</li>
+                <li class="card-description__item">Піца</li>
+                <li class="card-description__item">Американська</li>
+              </ul>
+              <p class="card-time">15 - 25 Min</p>
+            </div>
+            <div class="card-list__item">
+              <div class="card-img">
+                <img src="./images/goods/to-be.png" alt="to be photo">
+              </div>
+              <h2 class="card-title">To Be</h2>
+              <ul class="card-description">
+                <li class="card-description__item">₴₴</li>
+                <li class="card-description__item">Японська</li>
+                <li class="card-description__item">Азіатська</li>
+                <li class="card-description__item">Суші</li>
+              </ul>
+              <p class="card-time">25 - 35 Min</p>
+            </div>
+            <div class="card-list__item">
+              <div class="card-img">
+                <img src="./images/goods/druzi.png" alt="druzi cafe photo">
+              </div>
+              <h2 class="card-title">Druzi Cafe (вул. Прорізна)</h2>
+              <ul class="card-description">
+                <li class="card-description__item">₴₴</li>
+                <li class="card-description__item">Американська</li>
+                <li class="card-description__item">Сучасна європейська</li>
+                <li class="card-description__item">У...</li>
+              </ul>
+              <p class="card-time"></p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__row footer__row--border-bottom">
+          <a class="footer__logo logo_link" href="#">
+            <img src="./images/white-logo.svg" alt="uber eats">
+          </a>
+        </div>
+        <div class="footer__row footer__row--border-bottom footer__row--flex">
+          <div class="footer__column footer__column--flex-column">
+            <div class="language">
+              <img src="images/world.svg" alt="language" class="language__logo">
+              <span class="language__item language--active">English</span>
+            </div>
+            <span class="uber_tag">
+              <a href="#" class="footer__a"><span>#</span>UberEats</a>
+            </span>
+            <div class="footer__icon">
+              <a href="#" class="footer__icon__link"><img src="images/social/facebook.svg" alt="facebook"></a>
+              <a href="#" class="footer__icon__link"><img src="images/social/twitter.svg" alt="twitter"></a>
+              <a href="#" class="footer__icon__link"><img src="images/social/instagram.svg" alt="instagram"></a>
+            </div>
+          </div>
+          <div class="footer__column footer__column--flex-column">
+            <span class="footer__text footer__text--column">
+              <a href="#" class="footer__a">About UberEats</a>
+            </span>
+            <span class="footer__text footer__text--column">
+              <a href="#" class="footer__a">Become a Delivery Partner</a>
+            </span>
+            <span class="footer__text footer__text--column">
+              <a href="#" class="footer__a">Become a Restaurant Partner</a>
+            </span>
+          </div>
+          <div class="footer__column footer__column--flex-column">
+            <span class="footer__text footer__text--column">
+              <a href="#" class="footer__a">See all cities</a>
+            </span>
+            <span class="footer__text footer__text--column">
+              <a href="#" class="footer__a">Pricing</a>
+            </span>
+            <span class="footer__text footer__text--column">
+              <a href="#" class="footer__a">Help</a>
+            </span>
+            <span class="footer__text footer__text--column">
+              <a href="#" class="footer__a">FAQs</a>
+            </span>
+          </div>
+        </div>
+        <div class="footer__row footer__row--border-bottom footer__row--flex footer__row--flex-center">
+          <img class="store-button" src="images/app_store.svg" alt="app store">
+          <img class="store-button" src="./images/google.svg" alt="google play">
+        </div>
+        <div class="footer__row footer__row--flex">
+          <div class="footer__column footer__text--small">© 2019 Uber Technologies Inc.</div>
+          <span class="footer__column footer__text--small ">
+            <a href="#" class="footer__a">Privacy</a>
+          </span>
+          <span class="footer__column footer__text--small ">
+            <a href="#" class="footer__a">Terms</a>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#page-top" class="arrow-up">
+      <img src="./images/arrow_up.svg" alt="up">
+    </a>
+
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

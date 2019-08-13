@@ -1,0 +1,31 @@
+.input {
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1d1d1d;
+  padding: 0 10px 0 35px;
+
+  background: {
+    repeat: no-repeat;
+    position: 10px center;
+  }
+
+  &::placeholder {
+    color: #626262;
+    opacity: 0.5;
+  }
+
+  &:focus {
+    border: 1px solid $c-green;
+    outline: none !important;
+  }
+}
+
+.label {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #626262;
+}

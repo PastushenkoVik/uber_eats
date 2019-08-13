@@ -2,6 +2,8 @@
 
 ## Task
 
+[Figma](https://www.figma.com/file/Nzuqhw98XjFYZZJio10qUiEc/Uber-Eats?node-id=2%3A506)
+
 ---
 **Read the guideline before start**
 
@@ -9,4 +11,4 @@
 
 **Result**
 
-- [UPDATE DEMO LINK](https://<your_account>.github.io/<repo_name>/)
+- [UPDATE DEMO LINK](https://pastushenkovik.github.io/uber_eats/)

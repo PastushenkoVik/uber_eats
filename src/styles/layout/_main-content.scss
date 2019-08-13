@@ -1,0 +1,11 @@
+.main {
+  padding: 40px 0 50px;
+
+  @include for-tablet {
+    padding: 60px 0 50px;
+  }
+
+  @include for-desktop {
+    padding: 60px 0 80px;
+  }
+}
